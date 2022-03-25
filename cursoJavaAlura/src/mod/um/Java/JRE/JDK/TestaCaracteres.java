@@ -18,4 +18,5 @@ public class TestaCaracteres{
         palavra = palavra + 2020;
         System.out.println(palavra);
     }
+    //Teste Fabio
 }
