@@ -1,4 +1,4 @@
-package Java.JRE.JDK;
+package mod.um.Java.JRE.JDK;
 public class TestaEscopo {
 
 	public static void main(String[] args) {

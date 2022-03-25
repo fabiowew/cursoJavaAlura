@@ -1,4 +1,4 @@
-package Java.JRE.JDK;
+package mod.um.Java.JRE.JDK;
 public class TestaPontoFlutuante{
 
     public static void main(String[] args){
