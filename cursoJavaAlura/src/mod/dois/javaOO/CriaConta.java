@@ -1,4 +1,5 @@
 package mod.dois.javaOO;
+
 public class CriaConta {
 
     public static void main(String[] args) {

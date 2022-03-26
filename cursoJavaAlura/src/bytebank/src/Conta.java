@@ -1,4 +1,4 @@
-package mod.dois.javaOO;
+package bytebank.src;
 
 public class Conta {
 
