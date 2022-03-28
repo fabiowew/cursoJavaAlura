@@ -6,15 +6,6 @@ public class Funcionario {
 	private String cpf;
 	private double salario;
 	private int tipo = 0; // 0 = ufncionario comumm, 1 - gerente, 2 - diretor
-	private int senha;
-	
-	public boolean autentica(int senha) {
-		if(this.senha == senha) {
-			return true;
-		}else {
-			return false;
-		}
-	}
 	
 	
 	public int getTipo() {
