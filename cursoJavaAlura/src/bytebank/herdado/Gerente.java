@@ -4,7 +4,6 @@ public class Gerente extends Funcionario{
 
 	private String nome;
 	private String cpf;
-	private double salario;
 	private int senha;
 	
 	public void setSenha(int senha) {
@@ -20,7 +19,8 @@ public class Gerente extends Funcionario{
 	}
 	
 	public double getBonificacao() {
-		return this.salario;
+		System.out.println("Chamando o metodo de bonificacao do GERENTE");
+		return super.getBonificacao() +  super.getSalario();
 	}
 	
 	public String getNome() {
@@ -35,13 +35,4 @@ public class Gerente extends Funcionario{
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public double getSalario() {
-		return salario;
-	}
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
-	
-	
-	
 }
