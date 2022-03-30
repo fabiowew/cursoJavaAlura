@@ -1,7 +1,5 @@
 package bytebank.herdado;
 
-import bytebank.encapsulado.Conta;
-
 public class ContaCorrente extends Conta {
 	
 	public ContaCorrente(int agencia, int numero) {
@@ -13,6 +11,13 @@ public class ContaCorrente extends Conta {
 		double valorASacar = valor + 0.2;
 		return super.saca(valorASacar);
 	}
+
+	@Override
+	public void deposita(double valor) {
+		// TODO Auto-generated method stub
 		
+	}
+		
+	
 	
 }

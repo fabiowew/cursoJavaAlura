@@ -1,15 +1,21 @@
 package bytebank.herdado;
 
-public class Conta {
+public abstract class Conta {
 
-    double saldo;
-    int agencia;
-    int numero;
+	protected double saldo;
+    private int agencia;
+    private int numero;
+    private static int total;
     String titular;
-
-    public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
+    
+    public Conta(int agencia, int numero) {
+    	Conta.setTotal(Conta.getTotal() + 1);
+    	this.setAgencia(agencia);
+    	this.setNumero(numero);
+    	
     }
+
+    public abstract void deposita(double valor);
 
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
@@ -28,4 +34,28 @@ public class Conta {
         }
         return false;
     }
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public static int getTotal() {
+		return total;
+	}
+
+	public static void setTotal(int total) {
+		Conta.total = total;
+	}
 }
