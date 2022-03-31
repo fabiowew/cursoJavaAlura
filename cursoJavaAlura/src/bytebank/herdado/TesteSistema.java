@@ -7,7 +7,6 @@ public class TesteSistema {
 		Gerente g = new Gerente();
 		g.setSenha(2222);
 		
-		
 		Administrador adm = new Administrador();
 		adm.setSenha(3333);
 		
@@ -15,6 +14,8 @@ public class TesteSistema {
 		si.autentica(g);
 		si.autentica(adm);
 		
+		Cliente cliente = new Cliente();
+		si.autentica(cliente);
+		
 	}
-
 }

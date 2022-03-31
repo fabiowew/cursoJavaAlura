@@ -12,6 +12,7 @@ public class TesteFuncionario {
 		System.out.println(nico.getNome());
 		System.out.println(nico.getBonificacao());
 		
+		Cliente cliente = new Cliente();
 		//nico.salario = 300;
 		
 		
